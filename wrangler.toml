@@ -1,6 +1,7 @@
 name = "github-readme-stats"
 main = "workers/index.js"
 compatibility_date = "2023-03-20"
+compatibility_flags = ["nodejs_compat"]
 
 [site]
 bucket = "./"
