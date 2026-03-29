@@ -5,5 +5,6 @@ compatibility_date = "2023-03-20"
 [site]
 bucket = "./"
 
+# 删掉这段，或改为：
 [build]
-command = "npm install && npm run build"
+command = "npm install"

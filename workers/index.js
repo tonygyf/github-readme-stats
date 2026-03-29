@@ -1,4 +1,4 @@
-import { VercelRequest, VercelResponse } from '@vercel/node';
+import { VercelRequest, VercelResponse } from './vercel-adapter.js';
 import api from '../api/index.js';
 import gist from '../api/gist.js';
 import pin from '../api/pin.js';
