@@ -21,7 +21,8 @@ import { parseEmojis } from "../common/ops.js";
  * --experimental-json-modules flag.
  */
 import { createRequire } from "module";
-const require = createRequire(import.meta.url);
+// 骗过cloudflare检查？
+const require = createRequire("file://index.js");
 const languageColors = require("../common/languageColors.json"); // now works
 
 const ICON_SIZE = 16;

@@ -15,7 +15,8 @@ import { wakatimeCardLocales } from "../translations.js";
  * --experimental-json-modules flag.
  */
 import { createRequire } from "module";
-const require = createRequire(import.meta.url);
+// 骗过cloudflare检查？
+const require = createRequire("file://index.js");
 const languageColors = require("../common/languageColors.json"); // now works
 
 const DEFAULT_CARD_WIDTH = 495;
